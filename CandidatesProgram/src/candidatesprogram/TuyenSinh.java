@@ -44,7 +44,7 @@ public class TuyenSinh {
         System.out.print("Enter id want to search: ");
         String idName = checkInputString();
         for (Candidate can : l) {
-            if (can.idName.equalsIgnoreCase(idName)){
+            if (can.getIdName().equalsIgnoreCase(idName)){
                 return can;
             }
         }
@@ -53,7 +53,7 @@ public class TuyenSinh {
     
     public static void displayArea(ArrayList<Candidate> l, String area){
         System.out.println(area + ": ");
-        l.stream().filter((can) -> (can.priorities.getText().equalsIgnoreCase(area))).forEachOrdered((can) -> {
+        l.stream().filter((can) -> (can.getPriorities().getText().equalsIgnoreCase(area))).forEachOrdered((can) -> {
             System.out.println(can);
         });
     }

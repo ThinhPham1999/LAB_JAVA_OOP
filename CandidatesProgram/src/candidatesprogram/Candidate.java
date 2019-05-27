@@ -2,10 +2,11 @@
 package candidatesprogram;
 
 public class Candidate{
-    protected String idName;
-    protected String name;
-    protected String address;
-    protected Area priorities;
+    private String idName;
+    private String name;
+    private String address;
+    private Area priorities;
+    
 
     public Candidate() {
     }
